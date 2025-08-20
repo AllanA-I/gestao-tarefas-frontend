@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Gestor de Tarefas Frontend em React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é o frontend em React para o Gestor de Tarefas, consumindo a API Python + FastAPI. Permite visualizar, adicionar, remover e concluir tarefas de forma interativa.
 
-## Available Scripts
+Cada tarefa possui:
 
-In the project directory, you can run:
+* `id` (inteiro): identificador único.
+* `title` (string): título para exibição no frontend.
+* `descricao` (string): descrição detalhada da tarefa.
+* `concluida` (booleano): indica se a tarefa foi concluída.
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Exibir lista de tarefas obtidas via API.
+* Adicionar novas tarefas.
+* Marcar tarefas como concluídas.
+* Remover tarefas.
+* Comunicação com o backend através de requisições HTTP.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias
 
-### `npm test`
+* React
+* JavaScript (ES6+)
+* Fetch API para integração com backend
+* CSS básico para estilização
+* Estrutura modular (componentes separados)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como rodar
 
-### `npm run build`
+1. Instale dependências:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Inicie o servidor de desenvolvimento:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+3. Abra o navegador em `http://localhost:3000`. Certifique-se de que o backend está rodando para a integração funcionar.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Branch principal
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* O branch principal foi definido como `main`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Próximos passos
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Revisar o código adicionando comentários explicativos em cada componente.
+* Implementar tratamento de erros nas requisições HTTP.
+* Melhorar a estilização e responsividade da interface.
+* Criar integração contínua (CI) com o backend.
+* Eventual deploy unificado para demonstração funcional.
